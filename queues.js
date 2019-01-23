@@ -52,13 +52,4 @@ function createPriorityQueue() {
 	}
 }
 
-const q = createPriorityQueue()
-
-q.enqueue('A fix here')
-q.enqueue('A bug there')
-q.enqueue('A new feature')
-
-q.dequeue()
-q.enqueue('Emergency task', true)
-q.dequeue()
-console.log(q.peek())
+exports.createQueue = createQueue
